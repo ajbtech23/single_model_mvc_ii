@@ -3,6 +3,7 @@ require_relative "./sneaker"
 class SneakersView
 
   def display_all_sneakers(arr_sneaker_objs)
+    puts
     arr_sneaker_objs.each_with_index do |sneaker, index|
       puts("#{index + 1} ==> #{sneaker.name}")
     end
@@ -13,7 +14,7 @@ class SneakersView
   end
 
   def get_sneaker_detail_(stuff)
-    print("#{stuff}?\n> ")
+    print("\n#{stuff}?\n> ")
     return gets.chomp
   end
 

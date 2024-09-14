@@ -40,11 +40,7 @@ class SneakerRepository
       row[:id] = row[:id].to_i
       @sneakers << Sneaker.new(row)
     end
-    @sneakers.each do |sneaker|
-      puts("Sneaker ID: #{sneaker.id} Sneaker Name: #{sneaker.name} Sneaker Description: #{sneaker.description}")
-    end
     @next_id = @sneakers.empty? ? 1 : @sneakers.last.id + 1
-    puts("The current next id is: #{@next_id}")
   end
 
   def save_csv

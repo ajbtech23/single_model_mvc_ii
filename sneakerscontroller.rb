@@ -27,12 +27,12 @@ class SneakersController
   end
 end
 
-SNEAKER_CSV_FILE_PATH = File.join(__dir__, "./sneakers.csv")
-sneakers_repository_obj_mock = SneakerRepository.new(SNEAKER_CSV_FILE_PATH)
+# SNEAKER_CSV_FILE_PATH = File.join(__dir__, "./sneakers.csv")
+# sneakers_repository_obj_mock = SneakerRepository.new(SNEAKER_CSV_FILE_PATH)
 
-sneakers_controller_obj = SneakersController.new(sneakers_repository_obj_mock)
+# sneakers_controller_obj = SneakersController.new(sneakers_repository_obj_mock)
 
-puts
-sneakers_controller_obj.list
-puts
-sneakers_controller_obj.add
+# puts
+# sneakers_controller_obj.list
+# puts
+# sneakers_controller_obj.add
