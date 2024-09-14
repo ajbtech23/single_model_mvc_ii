@@ -21,9 +21,17 @@ class SneakersController
   end
 
   def find
+    list
+    user_input_sneaker_choice_int = (@sneakers_view.get_sneaker_display_number(1)).to_i
+    sneaker_obj_returned = @sneakers_repository_obj.find_specific_sneaker(user_input_sneaker_choice_int)
+    @sneakers_view.display_sneaker_description(sneaker_obj_returned)
   end
 
   def remove
+    list
+    user_input_sneaker_choice_int = (@sneakers_view.get_sneaker_display_number(2)).to_i
+    @sneakers_repository_obj.destroy_specific_sneaker(user_input_sneaker_choice_int)
+    list
   end
 end
 

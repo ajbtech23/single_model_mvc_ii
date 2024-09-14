@@ -38,7 +38,9 @@ class Router
     elsif int_user_input_selection == 2
       @sneakers_controller_obj.add
     elsif int_user_input_selection == 3
+      @sneakers_controller_obj.find
     elsif int_user_input_selection == 4
+      @sneakers_controller_obj.remove
     elsif int_user_input_selection == 5
       @running = false
     else
